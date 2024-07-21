@@ -1,0 +1,33 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1, h2 {
+    margin-top: 20px;
+}
+
+.layers {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.layer {
+    border: 1px solid #ccc;
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.layer:hover {
+    background-color: #f0f0f0;
+}
+
+.layer-detail {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    display: none;
+}

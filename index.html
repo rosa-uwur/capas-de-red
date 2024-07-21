@@ -1,0 +1,36 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelos OSI y TCP/IP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Modelos OSI y TCP/IP</h1>
+    
+    <h2>Modelo OSI</h2>
+    <div class="layers" id="osiLayers">
+        <div class="layer" onclick="showLayerDetail('osi', 1)">Capa Física</div>
+        <div class="layer" onclick="showLayerDetail('osi', 2)">Capa de Enlace de Datos</div>
+        <div class="layer" onclick="showLayerDetail('osi', 3)">Capa de Red</div>
+        <div class="layer" onclick="showLayerDetail('osi', 4)">Capa de Transporte</div>
+        <div class="layer" onclick="showLayerDetail('osi', 5)">Capa de Sesión</div>
+        <div class="layer" onclick="showLayerDetail('osi', 6)">Capa de Presentación</div>
+        <div class="layer" onclick="showLayerDetail('osi', 7)">Capa de Aplicación</div>
+    </div>
+
+    <h2>Modelo TCP/IP</h2>
+    <div class="layers" id="tcpipLayers">
+        <div class="layer" onclick="showLayerDetail('tcpip', 1)">Capa de Enlace</div>
+        <div class="layer" onclick="showLayerDetail('tcpip', 2)">Capa de Internet</div>
+        <div class="layer" onclick="showLayerDetail('tcpip', 3)">Capa de Transporte</div>
+        <div class="layer" onclick="showLayerDetail('tcpip', 4)">Capa de Aplicación</div>
+    </div>
+
+    <div id="layerDetail" class="layer-detail"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
