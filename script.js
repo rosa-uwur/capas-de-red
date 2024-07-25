@@ -27,14 +27,14 @@ const layers = {
         { 
             id: 5, 
             name: 'Capa de Sesión', 
-            details: 'INFORMACIÓN', 
-            img: 'Imagenes'
+            details: 'Gestiona y controla las conexiones entre aplicaciones, facilitando el intercambio de datos y la comunicación.<br><br><b>Funciones:</b><br>Establecimiento, mantenimiento y terminación de sesiones: La capa de sesión permite que dos dispositivos inicien, mantengan y terminen una comunicación organizada.<br>Sincronización: Proporciona puntos de sincronización en la comunicación para asegurar que los datos sean recibidos de manera coherente, especialmente útil en transferencias de datos largas.<br>Gestión de diálogo: Controla el diálogo entre los dispositivos, determinando cuál dispositivo puede enviar y recibir datos en un momento dado.<br><br><b>Protocolos:</b><br>NetBIOS: Un protocolo que permite que las aplicaciones en diferentes computadoras se comuniquen dentro de una red local.<br>RPC (Remote Procedure Call): Un protocolo que permite que un programa en un dispositivo ejecute código en un dispositivo remoto.', 
+            img: 'img/capa-sesion.png'
         },
         { 
             id: 6, 
             name: 'Capa de Presentación', 
-            details: 'INFORMACIÓN', 
-            img: 'Imagenes'
+            details: 'Traduce los datos entre el formato de la red y el formato que puede procesar una aplicación, actuando como un traductor entre los datos enviados por la red y los datos que pueden ser entendidos por la aplicación.<br><br><b>Funciones:</b><br>Compresión de datos: Reduce el tamaño de los datos para facilitar su transmisión eficiente a través de la red.<br>Cifrado y descifrado de datos: Proporciona seguridad cifrando los datos antes de la transmisión y descifrando los datos al recibirlos, garantizando la privacidad y la integridad.<br>Conversión de formatos de datos: Convierte los datos de un formato a otro, como de texto a binario o de una codificación a otra, asegurando que los datos sean compatibles entre diferentes sistemas.<br><br><b>Protocolos y formatos:</b><br>SSL/TLS: Protocolos que proporcionan comunicación segura a través de una red informática.<br>JPEG, MPEG: Formatos de compresión para imágenes y videos, respectivamente, que permiten la eficiente transmisión de archivos multimedia.', 
+            img: 'img/capa-presentacion.png'
         },
         { 
             id: 7, 
