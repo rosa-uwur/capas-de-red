@@ -46,7 +46,12 @@ const layers = {
     tcpip: [
         { id: 1, name: 'Capa de Enlace', details: 'Detalles de la capa de enlace...', img: null },
         { id: 2, name: 'Capa de Internet', details: 'Detalles de la capa de internet...', img: 'path/to/image4.jpg' },
-        { id: 3, name: 'Capa de Transporte', details: 'Detalles de la capa de transporte...', img: null },
+        { 
+            id: 3, 
+         name: 'Capa de Transporte', 
+            details: 'La capa de transporte TCP/IP garantiza que los paquetes lleguen en secuencia y sin errores, al intercambiar la confirmación de la recepción de los datos y retransmitir los paquetes perdidos. Este tipo de comunicación se conoce como transmisión de punto a punto.', 
+            img: 'img/capa-transporte-tcp.png'
+        },
         { id: 4, name: 'Capa de Aplicación', details: 'Detalles de la capa de aplicación...', img: 'path/to/image5.jpg' }
     ]
 };
