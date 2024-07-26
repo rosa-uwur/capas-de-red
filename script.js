@@ -22,7 +22,7 @@ const layers = {
             id: 4, 
             name: 'Capa de Transporte', 
             details: 'La capa de Transporte es el cuarto nivel del modelo OSI, y está encargado de la transferencia libre de errores de los datos entre el emisor y el receptor, aunque no estén directamente conectados, así como de mantener el flujo de la red. Es la base de toda la jerarquía de protocolo.', 
-            img: 'Imagenes'
+            img: 'img/capa-transporte.png'
         },
         { 
             id: 5, 
