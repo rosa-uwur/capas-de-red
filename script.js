@@ -15,8 +15,8 @@ const layers = {
         { 
             id: 3, 
             name: 'Capa de Red', 
-            details: 'INFORMACIÓN', 
-            img: 'Imagenes' 
+            details: 'La capa de red es crucial para el funcionamiento de las redes de comunicación, ya que se encarga de la entrega y el enrutamiento de paquetes de datos entre dispositivos en diferentes redes. Algunos componentes importantes son el enrutamiento, direccionamiento, encapsulamiento y desencapsulamiento, fragmentacion y reensamblaje, control de congestion y control de calidad de servicio. <br> <b>Enrutamiento: </b> La capa de red determina la ruta óptima para que los datos viajen desde el origen hasta el destino. Los routers (enrutadores) operan en esta capa y utilizan algoritmos de enrutamiento para decidir por qué caminos enviar los paquetes de datos.<br><b>Direccionamiento Lógico: </b>A diferencia del direccionamiento físico (MAC) de la capa de enlace de datos, la capa de red utiliza direcciones lógicas (como las direcciones IP en el caso de TCP/IP) para identificar de manera única a cada dispositivo en una red. <br><b>Encapsulación y Desencapsulación: </b>La capa de red encapsula los segmentos de la capa de transporte en paquetes. Estos paquetes incluyen una cabecera que contiene información necesaria para el enrutamiento, como la dirección IP de origen y destino. En el destino, la capa de red desencapsula el paquete para entregar los datos a la capa de transporte. <br><b>Fragmentación y Reensamblaje: </b>Los datos pueden necesitar ser fragmentados en paquetes más pequeños para ser transmitidos a través de redes con diferentes tamaños de unidad de transmisión máxima (MTU). La capa de red maneja esta fragmentación y el posterior reensamblaje en el destino</b>', 
+            img: 'img/capa-red-osi.png' 
         },
         { 
             id: 4, 
@@ -44,7 +44,7 @@ const layers = {
         }
     ],
     tcpip: [
-        { id: 1, name: 'Capa de Enlace', details: 'Detalles de la capa de enlace...', img: null },
+        { id: 1, name: 'Capa de Enlace', details: 'La capa de enlace en el modelo TCP/IP, también conocida como la capa de acceso a la red, corresponde a la capa de enlace de datos y la capa física en el modelo OSI. Su función principal es manejar las operaciones que se realizan directamente sobre el hardware de la red y proporcionar un enlace fiable para la transmisión de datos entre dos dispositivos en la misma red física. <br> Las funciones principales de este modelo son las siguientes: <br><ul><li>Encapsular datos</li><li>Control de acceso al medio (MAC)</li><li>Direccionamiento fisico</li><li>Deteccion y correccion de errores</li><li>Control de flujo</li><li>Fragmentacion y reensamblaje</li>', img: 'img/capa-enlace-tcp.png' },
         { id: 2, name: 'Capa de Internet', details: 'Detalles de la capa de internet...', img: 'path/to/image4.jpg' },
         { id: 3, name: 'Capa de Transporte', details: 'Detalles de la capa de transporte...', img: null },
         { id: 4, name: 'Capa de Aplicación', details: 'Detalles de la capa de aplicación...', img: 'path/to/image5.jpg' }

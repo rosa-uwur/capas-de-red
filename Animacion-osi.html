@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
+            align-items: center;
+            background: linear-gradient(100deg, #010632 20%, #000000 100%);
+            color: white
+        }
+
+        .red {
+            display: flex;
+            justify-content: space-between;
+            width: 80%;
+        }
+
+        .dispositivo {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 200px;
+        }
+
+        .capas {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .capa {
+            width: 100%;
+            height: 50px;
+            border: 2px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 5px 0;
+            border-radius: 15px;
+            opacity: 0.7;
+            text-align: center;
+            animation: colorCapa 28s infinite;
+        }
+
+        @keyframes colorCapa {
+
+            0%,
+            100% {
+                background-color: white;
+                opacity: 0;
+            }
+
+            4% {
+                background-color: unset;
+                opacity: 1;
+                border: dotted;
+            }
+
+            7.1% {
+                transform: scale(1.01);
+                background-color: purple;
+                color: white;
+
+            }
+
+            10.2% {
+                
+                transform: scale(1.01);
+                background-color: blue;
+                color: white;
+
+            }
+
+            13.3% {
+                transform: scale(1.01);
+                background-color: green;
+                color: white;
+
+            }
+
+            16.4% {
+                transform: scale(1.01);
+                background-color: yellow;
+                color: black;
+            }
+
+            19.5% {
+                transform: scale(1.01);
+                background-color: red;
+                color: white;
+
+            }
+
+            22.6% {
+                transform: scale(1.01);
+                background-color: skyblue;
+                color: black;
+            }
+
+            25.7% {
+                transform: scale(1.01);
+                background-color: darkblue;
+                color: white;
+
+            }
+
+            /* ANIMACION PARA EL SIGUIENTE SEGMENTO */
+
+            50%{
+                transform: scale(1);
+            }
+
+            70% {
+                border: dotted;
+                opacity: 1;
+            }
+
+            73.1% {
+                
+                transform: scale(1.01);
+                background-color: purple;
+                color: white;
+
+            }
+
+            76.2% {
+                transform: scale(1.01);
+                background-color: blue;
+                color: white;
+                
+            }
+
+            79.3% {
+                transform: scale(1.01);
+                background-color: green;
+                color: white;
+
+            }
+
+            81.4% {
+                transform: scale(1.01);
+                background-color: yellow;
+                color: black;
+
+            }
+
+            83.5% {
+                transform: scale(1.01);
+                background-color: red;
+                color: white;
+
+            }
+
+            86.6% {
+                transform: scale(1.01);
+                background-color: skyblue;
+                color: black;
+
+            }
+
+            89.7% {
+                transform: scale(1.01);
+                background-color: darkblue;
+                color: white;
+
+            }
+        }
+
+        .paquete {
+            width: 80px;
+            height: 40px;
+            border: 4px dotted white;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            animation: moverPaquete 28s infinite;
+        }
+
+        @keyframes moverPaquete {
+
+            0%,
+            100% {
+                transform: translate(0, 0);
+                opacity: 0;
+            }
+
+            4% {
+                opacity: 1;
+            }
+
+            7.1% {
+                transform: translate(-295px, -190px);
+                border-color: purple;
+            }
+
+            10.2% {
+                transform: translate(-295px, -127px);
+                border-color: blue;
+            }
+
+            13.3% {
+                transform: translate(-295px, -62px);
+                border-color: green;
+            }
+
+            16.4% {
+                transform: translate(-295px, 1px);
+                border-color: yellow;
+            }
+
+            19.5% {
+                transform: translate(-295px, 65px);
+                border-color: red;
+            }
+
+            22.6% {
+                transform: translate(-295px, 129px);
+                border-color: skyblue;
+            }
+
+            25.7% {
+                transform: translate(-295px, 190px);
+                border-color: darkblue;
+            }
+
+            /* ANIMACION PARA EL SIGUIENTE SEGMENTO */
+
+            70% {
+                opacity: 1;
+            }
+
+            73.1% {
+                transform: translate(295px, -190px);
+                border-color: purple;
+            }
+
+            76.2% {
+                transform: translate(295px, -127px);
+                border-color: blue;
+            }
+
+            79.3% {
+                transform: translate(295px, -62px);
+                border-color: green;
+            }
+
+            81.4% {
+                transform: translate(295px, 1px);
+                border-color: yellow;
+            }
+
+            83.5% {
+                transform: translate(295px, 65px);
+                border-color: red;
+            }
+
+            86.6% {
+                transform: translate(295px, 129px);
+                border-color: skyblue;
+            }
+
+            89.7% {
+                transform: translate(295px, 190px);
+                border-color: darkblue;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="red">
+        <div class="dispositivo">
+            <div class="capas">
+                <div class="capa">Capa de Fisica</div>
+                <div class="capa">Capa de Enlace de datos</div>
+                <div class="capa">Capa de Red</div>
+                <div class="capa">Capa de Transporte</div>
+                <div class="capa">Capa de Sesion</div>
+                <div class="capa">Capa de presentacion </div>
+                <div class="capa">Capa aplicacion</div>
+            </div>
+        </div>
+        <div class="dispositivo">
+            <div class="capas">
+                <div class="capa">Capa de Fisica</div>
+                <div class="capa">Capa de Enlace de datos</div>
+                <div class="capa">Capa de Red</div>
+                <div class="capa">Capa de Transporte</div>
+                <div class="capa">Capa de Sesion</div>
+                <div class="capa">Capa de presentacion </div>
+                <div class="capa">Capa aplicacion</div>
+            </div>
+        </div>
+    </div>
+    <div class="paquete">Paquete</div>
+</body>
+
+</html>
