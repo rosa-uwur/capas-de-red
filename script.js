@@ -9,8 +9,8 @@ const layers = {
         { 
             id: 2, 
             name: 'Capa de Enlace de Datos', 
-           details: 'INFORMACIÓN', 
-            img: 'Imagenes'
+           details: 'La Capa de Enlace de Datos es la segunda capa del modelo OSI y se encarga de la transferencia de datos entre dos dispositivos en la misma red. Su función principal es garantizar que los datos se transfieran de manera libre de errores desde el nodo emisor al nodo receptor. La Capa de Enlace de Datos realiza esto mediante la detección y corrección de errores en la capa física, y proporciona un medio para establecer y controlar el flujo de datos.<br><br><b>Funciones Principales:</b><br> - Encapsulación de Datos: Empaqueta los datos en tramas, que incluyen la dirección física del destinatario y del emisor.<br> - Control de Acceso al Medio (MAC): Determina cómo los dispositivos en la red acceden y utilizan el medio de transmisión.<br>- Detección y Corrección de Errores: Asegura la integridad de los datos mediante el uso de métodos como CRC (Cyclic Redundancy Check).<br>', 
+            img: 'img/capa-enlace-datos.png'
         },
         { 
             id: 3, 
@@ -45,7 +45,7 @@ const layers = {
     ],
     tcpip: [
         { id: 1, name: 'Capa de Enlace', details: 'Detalles de la capa de enlace...', img: null },
-        { id: 2, name: 'Capa de Internet', details: 'Detalles de la capa de internet...', img: 'path/to/image4.jpg' },
+        { id: 2, name: 'Capa de Internet', details: 'La Capa de Internet del modelo TCP/IP se encarga de la transmisión de paquetes de datos entre dispositivos a través de diferentes redes y de asegurar que estos paquetes lleguen a su destino a través de la red más adecuada. Esta capa proporciona funciones de direccionamiento y enrutamiento, permitiendo la comunicación entre dispositivos en redes diferentes, como en Internet.<br><br> <b>Funciones Principales:</b><br>- Direccionamiento: Asigna direcciones IP únicas a cada dispositivo en la red para identificar su origen y destino.<br> - Encapsulación: Encapsula los datos en paquetes IP, añadiendo encabezados que incluyen la dirección IP de origen y destino.<br> - Enrutamiento: Determina la mejor ruta para los paquetes a través de múltiples redes para llegar a su destino.<br> - Fragmentación y Reensamblaje: Divide los paquetes grandes en fragmentos más pequeños para su transmisión y luego los vuelve a ensamblar en el destino.<br><br> <b>Ejemplos de Dispositivos:</b><br>  - Routers: Dispositivos que enrutan paquetes de datos entre diferentes redes, tomando decisiones sobre la mejor ruta para cada paquete.<br>  - Gateways: Dispositivos que permiten la comunicación entre redes con diferentes protocolos y formatos de datos.<br><br>  <b>Protocolos:</b><br>  - IP (Internet Protocol): El protocolo principal de la capa de Internet, que proporciona la dirección y el enrutamiento de paquetes de datos.<br>  - IPv4: La versión más común de IP, que utiliza direcciones de 32 bits.<br>  - IPv6: La versión más reciente de IP, que utiliza direcciones de 128 bits para permitir un mayor número de direcciones.<br>   - ICMP (Internet Control Message Protocol): Utilizado para enviar mensajes de error y de diagnóstico, como los mensajes de "Host no alcanzable".<br>  - ARP (Address Resolution Protocol): Resuelve direcciones IP a direcciones MAC en redes locales.<br><br> <b>Puertos:</b><br> - Los dispositivos de la Capa de Internet en sí no tienen puertos físicos específicos, pero los protocolos IP pueden utilizar puertos en la Capa de Transporte (TCP/UDP) para la comunicación entre aplicaciones.<br> - Puertos TCP: 80 (HTTP), 443 (HTTPS), 25 (SMTP), etc.<br>- Puertos UDP: 53 (DNS), 67 (DHCP), 69 (TFTP), etc.<br><br>', img: 'img/capa-internet.png' },
         { 
             id: 3, 
          name: 'Capa de Transporte', 
